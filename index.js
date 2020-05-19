@@ -20,3 +20,21 @@ var houseKeeper2 = new HouseKeeper(1, "Jane", ["garage","kitchen","loft"]);
 
 console.log(houseKeeper1.name);
 console.log(houseKeeper2.cleaningRepertoire);
+
+///---------------------------------------------------------------------//
+
+// function within constructor associated with object, can be annonymous
+function HouseKeeper (yearsOfExperience, name, cleaningRepertoire) {
+    // create properties that equal the input paramaters
+    // function property does not need to be equal to a parameter if you execute the function on the object
+    this.yearsOfExperience = yearsOfExperience;
+    this.name = name;
+    this.cleaningRepertoire = cleaningRepertoire;
+    this.clean = function () {
+      console.log("cleaning in progress...");
+    }
+}
+
+var houseKeeper3 = new HouseKeeper(1, "Derek", ["kitchen","balcony","study"]);
+
+houseKeeper3.clean();
