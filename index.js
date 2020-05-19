@@ -13,4 +13,7 @@ function HouseKeeper (yearsOfExperience, name, cleaningRepertoire) {
 // now we can create new objects off of the constructor
 
 // using 'new' is the important key to designate each variant of a constructor
-var houseKeeper1 = new HouseKeeper
+var houseKeeper1 = new HouseKeeper(5, "Bob", ["bathroom","bedroom","living room"]);
+// inside the new variant you can provide the values of the properties
+
+console.log(houseKeeper1);
