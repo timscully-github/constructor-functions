@@ -16,4 +16,7 @@ function HouseKeeper (yearsOfExperience, name, cleaningRepertoire) {
 var houseKeeper1 = new HouseKeeper(5, "Bob", ["bathroom","bedroom","living room"]);
 // inside the new variant you can provide the values of the properties
 
-console.log(houseKeeper1);
+var houseKeeper2 = new HouseKeeper(1, "Jane", ["garage","kitchen","loft"]);
+
+console.log(houseKeeper1.name);
+console.log(houseKeeper2.cleaningRepertoire);
